@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --padding-container: 100px 0;
+    --color-title: #001a49;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+h1{
+    color: #ffff;
+}
+h2{
+    color: #ffff;
+}
+p{
+    color: #ffff;
+}
+
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: var(--padding-container);
+}
+
+.hero{
+    width: 100%;
+    height: 100vh;
+    min-height: 600;
+    max-height: 800px;
+    position: relative;
+    display: grid;
+    grid-template-rows: 100px 1fr;
+}
+
+.hero::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(180deg, #000000c8 0%, #000000c8 100%), url('../images/portada-1.jpg');
+    background-size: cover;
+    clip-path: polygon(50% 0%, 100% 0, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 0 0);
+    z-index: -1;
+}
+
+.nav{
+    --padding-container: 0;
+}
