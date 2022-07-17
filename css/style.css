@@ -162,3 +162,7 @@ body {
 .about__icon{
     width: 40px;
 }
+
+.responsive__img{
+    width: 100%;
+}
