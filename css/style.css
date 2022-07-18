@@ -163,6 +163,35 @@ body {
     width: 40px;
 }
 
+/*--------------- Responsive ---------------*/
+
+.responsive{
+    background-color: #e5e5f7;
+    background-image: radial-gradient(#444cf7 0.5px, transparent 0.5px), radial-gradient(#444cf7 0.5px, #e5e5f7 0.5px);
+    background-size: 20px 20px;
+    background-position: 0 0, 10px 10px;
+    overflow: hidden;
+}
+
+.responsive__container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    align-items: center;
+}
+
+.responsive__picture{
+    max-width: 500px;
+}
+
+.responsive__parrafo{
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
 .responsive__img{
     width: 100%;
+    display: block;
+    border-radius: 15px;
 }
+
