@@ -195,3 +195,56 @@ body {
     border-radius: 15px;
 }
 
+/*------------- Certificados ---------------*/
+
+.certificados{
+    background-color: #e5e5f7;
+}
+
+.certificados__container{
+    display: grid;
+    grid-template-columns: 50px 1fr 50px;
+    gap: 1rem;
+    align-items: center;
+}
+
+.certificados__body{
+    display: grid;
+    grid-template-columns: 1fr max-content;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2 rem;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.certificados__body--show{
+    pointer-events: unset;
+    opacity: 1;
+    transition: opacity 1.5s ease-in-out;
+}
+
+.certificados__img{
+    width: 250px;
+    height: 250px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.certificados__texts{
+    max-width: 700px;
+}
+
+.certificados__curso{
+    background-color: royalblue;
+    color: #ffff;
+    display: inline-block;
+    padding: 5px;
+}
+
+.certificados__arrow {
+    width: 90%;
+    cursor: pointer;
+}
