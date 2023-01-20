@@ -151,14 +151,14 @@ body {
     margin: 0 auto;
     gap: 1em;
     overflow: hidden;
-    grid-template-columns: repeat(auto-fit, minmax(260px, auto));
+    grid-template-columns: repeat(auto-fit, minmax(100px, auto));
 }
 
 .about__icons{
     display: grid;
     gap: 1em;
     justify-items: center;
-    width: 260px;
+    width: 100px;
     overflow: hidden;
     margin: 0 auto;
 }
